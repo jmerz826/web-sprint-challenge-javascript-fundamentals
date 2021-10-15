@@ -78,7 +78,7 @@ function animalNames(arr) {
 }
 
 //Request 1 TEST
-console.log(animalNames(zooAnimals));
+// console.log(animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
@@ -87,9 +87,18 @@ console.log(animalNames(zooAnimals));
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+function lowerCaseNames(arr) {
+  //declare variable that map will return an array filled with lowercase animal names from passed in array (zooAnimals)
+  const lowerCaseNames = arr.map((exhibit) =>
+    exhibit.animal_name.toLowerCase()
+  );
+
+  // returns the array created from .map
+  return lowerCaseNames;
+}
+
+// Request 2 TEST
+// console.log(lowerCaseNames(zooAnimals));
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -97,8 +106,8 @@ console.log(animalNames(zooAnimals));
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(/*Your Code Here*/){
-    /*Your Code Here*/
+  function lowPopulationAnimals(){
+    
   }
   
 
