@@ -114,7 +114,8 @@ function lowPopulationAnimals(arr) {
   return lowPopulationAnimals;
 }
 
-console.log(lowPopulationAnimals(zooAnimals));
+// Request 3 TEST
+// console.log(lowPopulationAnimals(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
@@ -123,11 +124,17 @@ console.log(lowPopulationAnimals(zooAnimals));
   Remember the reduce method takes two arguments: a callback (which itself takes two args - the accumulator and the item), and an initial value for the count.
   */
 
-  function USApop(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+function USApop(arr) {
+  // reduce method starts with initial value of zero, and additively compounds each exhibit's population as it passes through each object in the argument array
+  const totalPop = arr.reduce((acc, exhibit) => acc + exhibit.population, 0);
+
+  //returns single value
+  return totalPop;
+}
   
-  
+// Request 4 TEST
+// console.log(USApop(zooAnimals));
+
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
   /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
     * Use the higher-order function consume with 3 parameters: a, b and cb
