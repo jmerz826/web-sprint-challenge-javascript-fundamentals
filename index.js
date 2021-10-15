@@ -17,6 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
+// EXPLANATION: The function *nestedFunction* can access the 'internal' variable because they are both within the function scope of *myFunction*.  For this same reason, *nestedFunction* cannot be invoked outside of myFunction. Scopes can only look out, not in. In other words, a child can pull from a parent, but a parent cannot pull from a child.
 
 
 
