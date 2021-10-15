@@ -26,13 +26,33 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+ANSWER: .map, .reduce, and .filter are all advanced array methods that create a new array and do not affect the original array.  
+
+.map is great for converting data. You can pass in an array of numbers, invoke a map method to return an array of each number in the original array multiplied by 1.1 (good for currency conversions).  This new array of each number multiplied by 1.1 must be saved to a new variable.
+
+.reduce returns a single value derived from an array. It is used primarily for adding or multiplying certain, or all, values in an array. In an array of objects, it is able to parse out solely values of specified key(s).
+
+.filter returns an array that is a subset of the original array it parses over that "filter"s out elements based on one or more specifications.  For example, you can limit an array of people objects down to exclusively those people with brown eyes.  Resulting array must be saved to a new variable. 
+
 2. Explain the difference between a callback and a higher order function.
+
+ANSWER: A callback function is a function that is passed into a higher order function.
 
 3. Explain what a closure is.
 
+ANSWER: A closure is an instance in which a function reaches into a function that is outside of its scope for information. 
+
 4. Describe the four principles of the 'this' keyword.
 
+ANSWER: 
+    a) Window binding - when 'this' is unassigned, 'this' is assigned to the entire window. This is pretty useless, and, in fact, is prohibited in strict mode, in which undefined is returned.
+    b) Implicit binding - when a method is called on an object (Ex: Math.random()), the method simply looks to the left of the dot to determine what the method is being bound to.
+    c) Explicit binding - this is when the 'this' keyword is manually set.  Using bind, call, or apply, we can establish 'this' to be what we declare, not what it is by default, necessarily.
+    d) New binding - When a constructor function is invoked to create a new object using the 'new' keyword, 'this' is bound to the new object being created as a result of the constructor.
+
 5. Why do we need super() in an extended class?
+
+ANSWER: super() is required to instruct the child element to inherit specified attributes from the parent element. 
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
