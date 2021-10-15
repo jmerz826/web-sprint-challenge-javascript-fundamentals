@@ -136,35 +136,40 @@ function USApop(arr) {
 // console.log(USApop(zooAnimals));
 
 
-  // 🦁🦁🦁 Callbacks 🦁🦁🦁  
-  /* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
-    * Use the higher-order function consume with 3 parameters: a, b and cb
-    * The first two parameters can take any argument (we can pass any value as an argument)
-    * The last parameter accepts a callback
-    * The consume function should return the invocation of cb, passing a and b into cb as arguments
-  */
+// 🦁🦁🦁 Callbacks 🦁🦁🦁  
+/* 🦁🦁🦁 Step 1: Create a higher-order function 🦁🦁🦁
+  * Use the higher-order function consume with 3 parameters: a, b and cb
+  * The first two parameters can take any argument (we can pass any value as an argument)
+  * The last parameter accepts a callback
+  * The consume function should return the invocation of cb, passing a and b into cb as arguments
+*/
 
-  function consume(a, b, cb){
-    return cb(a, b);
-  }
+function consume(a, b, cb) {
+  return cb(a, b);
+}
  
   
-  /* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
- // 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
+/* 🦁🦁🦁 Step 2: Create several functions to callback with consume(); 🦁🦁🦁 */
+// 🦁🦁🦁 Use add to return the sum of two numbers 🦁🦁🦁
   
-function add(){
-    /*Your Code Here*/
-  }
+function add(a,b){
+  return a + b;
+}
+
+// add TEST
+// console.log(consume(2, 4, add));
 
 
 // 🦁🦁🦁 Use multiply to return the product of two numbers 🦁🦁🦁
   
-function multiply(){
-   
-  }
+function multiply(a, b) {
+  return a * b;
+}
 
+// multiply TEST
+// console.log(consume(4, 10, multiply));
 
- // 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
+// 🦁🦁🦁 Use greeting to accept a first and last name and return "Hello {first-name} {last-name}, nice to meet you!" 🦁🦁🦁
   
 function greeting(){
    return 
