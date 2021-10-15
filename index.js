@@ -106,9 +106,15 @@ function lowerCaseNames(arr) {
   Using lowPopulationAnimals use .filter() to create a new array of objects which contains only the animals with a population of less than 5.
   */
 
-  function lowPopulationAnimals(){
-    
-  }
+function lowPopulationAnimals(arr) {
+  // declare new variable that uses filter method to only pass in objects in array from argument that have a population less than 5.
+  const lowPopulationAnimals = arr.filter((exhibit) => exhibit.population < 5);
+
+  // return array of objects with populations less than 5
+  return lowPopulationAnimals;
+}
+
+console.log(lowPopulationAnimals(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
