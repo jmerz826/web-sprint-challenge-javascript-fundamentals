@@ -62,9 +62,23 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+function animalNames(arr) {
+  // Initialize empty array. This is where our desired strings will be pushed into
+  const displayNames = [];
+
+  // For each loop is passing over each exhibit in the inputted array (in this case, zooAnimals), and pushing the appropriate name and scientific name into the displayNames array
+  arr.forEach((exhibit) =>
+    displayNames.push(
+      `name: ${exhibit.animal_name}, scientific: ${exhibit.scientific_name}`
+    )
+  );
+
+  //function spits out our desired array of strings after our forEach loop has passed in each exhibit's animal name and scientific name
+  return displayNames;
+}
+
+//Request 1 TEST
+console.log(animalNames(zooAnimals));
   
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
